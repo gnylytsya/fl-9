@@ -1,0 +1,114 @@
+body {
+  margin: auto;
+  width: 80%;
+  background: #e0e1e1; }
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline; }
+  header div {
+    display: inline-block;
+    width: 30%; }
+    header div img {
+      width: 100%; }
+  header nav {
+    box-sizing: border-box;
+    display: flex;
+    width: 60%;
+    border-bottom: 2px solid #a9adaa;
+    border-top: 2px solid #a9adaa;
+    text-align: center;
+    justify-content: space-around; }
+    header nav a {
+      text-decoration: none;
+      font-size: 30px;
+      color: #f9a356;
+      ; }
+
+div.main-wrapper {
+  width: 100%; }
+div.toolbar {
+  text-align: right;
+  padding-right: 5%; }
+  div.toolbar input {
+    border: 2px solid #f9a356;
+    background: #e0e1e1;
+    margin-top: 30px; }
+    div.toolbar input::placeholder {
+      color: #f9a356; }
+div.post-list {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap; }
+  div.post-list article {
+    box-sizing: border-box;
+    max-width: 45%;
+    border: 15px solid transparent;
+    background-color: #fff;
+    margin: 25px; }
+    div.post-list article img {
+      width: 100%; }
+    div.post-list article div.post-description {
+      color: #a9adad;
+      border-bottom: 2px solid #a9adaa; }
+    div.post-list article div h3 {
+      color: #9c9c9c; }
+
+section {
+  margin: auto; }
+  section.about {
+    text-align: right;
+    padding-right: 5%; }
+    section.about div h1 {
+      color: #f9a356;
+      font-variant: all-petite-caps;
+      margin-left: 88%; }
+    section.about div p {
+      padding-left: 2%;
+      text-align: justify; }
+    section.about div img {
+      width: 98%; }
+  section.contact-form {
+    display: block; }
+  section.contact-form {
+    text-align: right;
+    padding-right: 5%; }
+    section.contact-form h1 {
+      color: #f9a356;
+      margin-bottom: 0; }
+    section.contact-form h4 {
+      color: #f9a356;
+      font-variant: all-petite-caps;
+      margin-top: 0; }
+    section.contact-form form textarea {
+      width: 96%;
+      padding: 1%;
+      height: 7em; }
+      section.contact-form form textarea::placeholder {
+        padding-left: 1%; }
+    section.contact-form form input {
+      padding: 1%; }
+      section.contact-form form input[type=text] {
+        width: 96%;
+        margin-bottom: 1%; }
+      section.contact-form form input[type=email] {
+        width: 96%;
+        margin-bottom: 1%; }
+      section.contact-form form input[type=submit] {
+        width: 17%;
+        margin-left: 81.5%;
+        background: #f9a356;
+        color: white;
+        border: none; }
+        section.contact-form form input[type=submit]:hover {
+          background: #fbbe87; }
+      section.contact-form form input::placeholder {
+        padding-left: 1%; }
+
+span {
+  margin: 2%;
+  color: #a1a1a1; }
+
+/*# sourceMappingURL=style2.css.map */

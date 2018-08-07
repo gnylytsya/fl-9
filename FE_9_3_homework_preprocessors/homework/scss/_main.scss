@@ -1,0 +1,168 @@
+
+body {
+  margin: auto;
+  width: 80%;
+  background: $background;
+
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+
+  div {
+    display: inline-block;
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  nav {
+    box-sizing: border-box;
+    display: flex;
+    width: 60%;
+    text-align: center;
+    justify-content: space-around;
+    border-bottom: 2px solid $borderColor;
+    border-top: 2px solid $borderColor;
+      
+    a {
+      text-decoration: none;
+      color: $titleColor;
+      font-size: 30px;
+    }
+  }
+}
+
+div {
+  &.main-wrapper {
+    width: 100%;
+  }
+  &.toolbar {
+    text-align: right;
+    padding-right: 5%;
+    input {
+      border: 2px solid $titleColor;
+      background: $background;
+      margin-top: 30px;
+      &::placeholder {
+        color: $titleColor;
+
+      }
+    }
+
+  }
+  &.post-list {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+
+    article {
+      box-sizing: border-box;
+      max-width: 45%;
+      border: 15px solid transparent;
+      background-color: $imgBackground;
+      margin: 25px;
+      img {
+        width: 100%;
+      }
+      div {
+        &.post-description {
+          color: $timeColor;
+          border-bottom: 2px solid $borderColor;
+        }
+        h3 {
+          color: $h3Color;
+        }
+      }
+    }
+  }
+}
+
+section {
+  margin: auto;
+
+  &.about {
+    text-align: right;
+    padding-right: 5%;
+    div {
+      h1 {
+        color: $titleColor;
+        font-variant: all-petite-caps;
+        margin-left: 88%;
+      }
+      p {
+        padding-left: 2%;
+        text-align: justify;
+      }
+    }
+    div {
+      img {
+        width: 98%;
+      }
+    }
+  }
+  &.contact-form {
+    display: block;
+  }
+  &.contact-form {
+    text-align: right;
+    padding-right: 5%;
+
+    h1 {
+      color: $titleColor;
+      margin-bottom: 0;
+
+    }
+    h4 {
+      color: $titleColor;
+
+      font-variant: all-petite-caps;
+      margin-top: 0;
+    }
+    form {
+      textarea {
+        width: 96%;
+        padding: 1%;
+        height: 7em;
+
+        &::placeholder {
+          padding-left: 1%;
+        }
+      }
+      input {
+        padding: 1%;
+        &[type=text] {
+          width: 96%;
+          margin-bottom: 1%;
+
+        }
+        &[type=email] {
+          width: 96%;
+          margin-bottom: 1%;
+
+        }
+        &[type=submit] {
+          width: 17%;
+          margin-left: 81.4%;
+          background: $titleColor;
+          color: white;
+          border: none;
+          &:hover {
+            background: lighten($titleColor, 11%);
+          }
+        }
+        &::placeholder {
+          padding-left: 1%;
+        }
+      }
+    }
+  }
+}
+
+span {
+  margin: 2%;
+  color: #a1a1a2;
+}
